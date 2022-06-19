@@ -7,8 +7,14 @@ let array = ["JavaScript", "PHP", "Ruby"];
 // console.log(a, b, c);
 // Cach bth
 
-let [a, b, c] = array;
-console.log(a, b, c);
-let [d, , e] = array;
-console.log(d, e);
+// let [a, b, c] = array;
+// console.log(a, b, c);
+// let [d, , e] = array;
+// console.log(d, e);
 // Destructuring
+
+let [f, ...rest] = array;
+console.log(f);
+// Output: JavaScript
+console.log(rest);
+// Ouput = ["PHP", "Ruby"]
