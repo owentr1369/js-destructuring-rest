@@ -18,3 +18,18 @@ console.log(f);
 // Output: JavaScript
 console.log(rest);
 // Ouput = ["PHP", "Ruby"]
+
+let course = {
+  name: "JavaScript",
+  price: 200,
+  children: {
+    name: "ReactJS",
+  },
+};
+
+let {
+  name: parentName,
+  children: { name },
+} = course;
+console.log(name);
+Output: ReactJS;
